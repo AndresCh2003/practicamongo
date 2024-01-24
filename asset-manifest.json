@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/practicamongo/static/css/main.3e14dfee.css",
+    "main.js": "/practicamongo/static/js/main.4a397352.js",
+    "static/js/787.ac1424a1.chunk.js": "/practicamongo/static/js/787.ac1424a1.chunk.js",
+    "static/media/primeicons.svg": "/practicamongo/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/primeicons.eot": "/practicamongo/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/practicamongo/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/practicamongo/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/primeicons.woff2": "/practicamongo/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "index.html": "/practicamongo/index.html",
+    "main.3e14dfee.css.map": "/practicamongo/static/css/main.3e14dfee.css.map",
+    "main.4a397352.js.map": "/practicamongo/static/js/main.4a397352.js.map",
+    "787.ac1424a1.chunk.js.map": "/practicamongo/static/js/787.ac1424a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e14dfee.css",
+    "static/js/main.4a397352.js"
+  ]
+}
