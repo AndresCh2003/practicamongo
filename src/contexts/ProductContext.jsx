@@ -1,18 +1,17 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect, useMemo } from "react";
 import { ProductService } from "../services/ProductService";
 
 export const ProductContext = createContext();
 
 const ProductContextProvider = (props) => {
-  const productService = new ProductService();
+  const productService = useMemo(() => new ProductService(), []); // Utilizar useMemo para evitar dependencias cambiantes
 
   const [products, setProducts] = useState([]);
-
   const [editProduct, setEditProduct] = useState(null);
 
   useEffect(() => {
     productService.readAll().then((data) => setProducts(data));
-  }, []);
+  }, [productService]);
 
   const createProduct = (product) => {
     productService
@@ -37,7 +36,7 @@ const ProductContextProvider = (props) => {
       .update(product)
       .then((data) =>
         setProducts(
-          products.map((p) => (p._id === product._id ? data : product))
+          products.map((p) => (p._id === product._id ? data : p))
         )
       );
 
